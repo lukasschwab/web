@@ -79,19 +79,12 @@ input:focus {
     font-size: 4em;
     margin-top: 0.2em;
     margin-bottom: 1em;
-    text-transform: uppercase;
-    color: #47adaa;
+    color: #7FDBFF;
 }
 
 #messages {
     min-height: 1.4em;
     font-size: 2em;
-}
-
-.contact-us {
-    background: rgb(42, 42, 42);
-    color: #fff;
-    padding: 20em 0 50em;
 }
 
 .questions {
@@ -102,7 +95,6 @@ input:focus {
 
 .bulldog-tease {
     display: inline-block;
-    padding-right: 1em;
 }
 
 .contact-email {
@@ -114,15 +106,63 @@ input:focus {
     color: #fff;
 }
 
-/* SIZING */
+/* LAYOUT */
 .left {
+    height: 100%;
     width: 30%;
+    background-color: #001f3f;
+    color: #7FDBFF;
+    border-right: 5px solid #7FDBFF;
 }
 
 .right {
+    float: left;
+    margin-left: 30%;
     width:70%;
     float: right;
+    background: #FFFFFF;
+    color: #0074D9;
+    padding: 30vh 0 30vh;
+    text-align: left;
+    max-width: 70%;
 }
+
+.top {
+    height: 100vh;
+}
+
+/* CONTENTS */
+
+.nav-left {
+    padding: 0;
+    list-style: none;
+    text-align: right;
+    /*color: #7FDBFF;*/
+}
+
+.nav-left a {
+    color: #7FDBFF;
+}
+
+.centered-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+.contents-container {
+    width: 40em;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section {
+    margin-bottom: 50px;
+}
+
+/* RESPONSIVENESS */
 
 @media only screen and (max-width: 1250px) {
     .dates {
@@ -139,14 +179,13 @@ input:focus {
 @media only screen and (max-width: 992px) {
     .left {
         width: inherit;
+        background-color: #001f3f
     }
     .right {
-        width: inherit;
+        width: 100%;
+        max-width: 100%;
         float: inherit;
-    }
-    .contact-us {
-        margin-top: 10em;
-        padding: 4em 2em 5em;
+        margin: 0;
     }
     .affix {
         display: none;
@@ -167,4 +206,12 @@ input:focus {
     .dates {
         font-size: 2em;
     }
+}
+
+/* MODIFIERS */
+.light-text {
+    color: #0074D9;
+}
+.dark-text {
+    color: #001f3f;
 }
