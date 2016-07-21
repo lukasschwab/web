@@ -95,7 +95,7 @@ img {
 }
 
 .top {
-    height: 100vh;
+    min-height: 100vh;
 }
 
 /* CONTENTS */
@@ -133,7 +133,7 @@ img {
 
 .contents-container h1.attention {
     font-size: 60px;
-    margin-bottom: ;
+    margin-bottom: 75px;
 }
 
 /* INPUT */
@@ -228,7 +228,6 @@ input.button.signup:hover {
     }
     .contents-container h1.attention {
         font-size: 45px;
-        margin-bottom: ;
     }
 }
 
