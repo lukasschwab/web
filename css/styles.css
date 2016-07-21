@@ -1,9 +1,13 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+@import 'https://fonts.googleapis.com/css?family=Inconsolata:700|Roboto+Slab:300';
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto Slab', sans-serif;
     text-align: center;
     color: rgb(42,42,42);
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Inconsolata', sans-serif;
 }
 
 .navy { color: #202f57; }
@@ -122,7 +126,7 @@ input:focus {
     float: right;
     background: #FFFFFF;
     color: #0074D9;
-    padding: 30vh 0 30vh;
+    padding: 10em 0 10em;
     text-align: left;
     max-width: 70%;
 }
@@ -132,7 +136,6 @@ input:focus {
 }
 
 /* CONTENTS */
-
 .nav-left {
     padding: 0;
     list-style: none;
@@ -162,8 +165,26 @@ input:focus {
     margin-bottom: 50px;
 }
 
-/* RESPONSIVENESS */
+/* INPUT */
+input {
+    font-size: 16px;
+    outline: none;
+}
 
+.email {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid white;
+    border-radius: 2px;
+    background: transparent;
+    color: white;
+}
+
+.signup-container {
+    margin: 20px 0 20px;
+}
+
+/* RESPONSIVENESS */
 @media only screen and (max-width: 1250px) {
     .dates {
         font-size: 2.5em;
@@ -179,7 +200,11 @@ input:focus {
 @media only screen and (max-width: 992px) {
     .left {
         width: inherit;
-        background-color: #001f3f
+        background-color: #001f3f;
+        border: none;
+    }
+    .top {
+        border-bottom: 5px solid #7FDBFF;
     }
     .right {
         width: 100%;
