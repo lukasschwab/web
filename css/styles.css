@@ -114,6 +114,16 @@ input:focus {
     color: #fff;
 }
 
+/* SIZING */
+.left {
+    width: 30%;
+}
+
+.right {
+    width:70%;
+    float: right;
+}
+
 @media only screen and (max-width: 1250px) {
     .dates {
         font-size: 2.5em;
@@ -127,6 +137,13 @@ input:focus {
 }
 
 @media only screen and (max-width: 992px) {
+    .left {
+        width: inherit;
+    }
+    .right {
+        width: inherit;
+        float: inherit;
+    }
     .contact-us {
         margin-top: 10em;
         padding: 4em 2em 5em;
@@ -146,6 +163,7 @@ input:focus {
 }
 
 @media only screen and (max-width : 520px){
+
     .dates {
         font-size: 2em;
     }
