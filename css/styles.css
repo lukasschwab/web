@@ -102,7 +102,11 @@ img {
 .nav-left {
     padding: 0;
     list-style: none;
-    text-align: right;
+    font-size: 18px;
+}
+
+.nav-left li {
+    margin-bottom: 5px;
 }
 
 .nav-left a {
@@ -127,13 +131,18 @@ img {
     margin-bottom: 50px;
 }
 
+.contents-container h1.attention {
+    font-size: 60px;
+    margin-bottom: ;
+}
+
 /* INPUT */
 input {
     font-size: 16px;
     outline: none;
 }
 
-.email {
+input.email {
     width: 100%;
     padding: 12px;
     border: 2px solid #FAFAFA;
@@ -147,8 +156,31 @@ input {
     border-color: #7FDBFF;
 }
 
+input.button.signup {
+    padding: 12px 25px;
+    background: transparent;
+    border: 2px solid #FAFAFA;
+    border-radius: 2px;
+    color: #FAFAFA;
+    /* Hover */
+    cursor: pointer;
+    text-transform: lowercase;
+    transition: 0.3s ease;
+}
+input.button.signup:hover {
+    color: #001f3f;
+    border-color: #7FDBFF;
+    background-color: #7FDBFF;
+}
+/* Irritating. */
+#mc-embedded-subscribe {
+    margin: 0;
+    margin: 13px auto 0px auto;
+}
+
 .signup-container {
     margin: 20px 0 20px;
+    text-align: center;
 }
 
 /* RESPONSIVENESS */
@@ -173,9 +205,6 @@ input {
     .top {
         border-bottom: 5px solid #7FDBFF;
     }
-    .nav-left {
-        text-align: center;
-    }
     .right {
         width: 100%;
         max-width: 100%;
@@ -197,12 +226,13 @@ input {
     body {
         font-size: 17px;
     }
+    .contents-container h1.attention {
+        font-size: 45px;
+        margin-bottom: ;
+    }
 }
 
 @media only screen and (max-width : 520px){
-    .dates {
-        font-size: 2em;
-    }
     .contents-container {
         max-width: 80%;
     }
