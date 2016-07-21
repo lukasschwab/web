@@ -87,7 +87,7 @@ img {
     margin-left: 30%;
     width:70%;
     float: right;
-    background: #FFFFFF;
+    background: #FAFAFA;
     color: #0074D9;
     padding: 10em 0 10em;
     text-align: left;
@@ -136,10 +136,10 @@ input {
 .email {
     width: 100%;
     padding: 12px;
-    border: 2px solid white;
+    border: 2px solid #FAFAFA;
     border-radius: 2px;
     background: transparent;
-    color: white;
+    color: #FAFAFA;
 }
 
 /* Generalize out? */
@@ -172,6 +172,9 @@ input {
     }
     .top {
         border-bottom: 5px solid #7FDBFF;
+    }
+    .nav-left {
+        text-align: center;
     }
     .right {
         width: 100%;
