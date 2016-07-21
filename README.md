@@ -2,4 +2,4 @@
 
 + Add anchor.js
 + http://hackcss.com/
-+ Butterick's typography
++ Image in the left bar
